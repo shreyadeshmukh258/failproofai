@@ -236,7 +236,7 @@ export type CopilotHookEventType = (typeof COPILOT_HOOK_EVENT_TYPES)[number];
  * unchanged via the `?? raw` fallback in handler.ts:canonicalizeToolName.
  *
  * Keys derived from in-repo evidence (lib/copilot-sessions.ts and the Copilot
- * CLI's published tool set). If a future Copilot release ships new tool IDs
+ * CLI's published tool set). If a future Copilot release ships neGet-Content package.json tool IDs
  * we don't recognize, they pass through and any non-builtin custom policy
  * matching by raw name still works.
  */
@@ -275,6 +275,8 @@ export const COPILOT_TOOL_MAP: Record<string, string> = {
   rg: "Grep",
   ls: "LS",
   web_fetch: "WebFetch",
+  task: "Task",
+web_search: "WebSearch",
 };
 
 /**
